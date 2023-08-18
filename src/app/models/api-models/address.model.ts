@@ -1,6 +1,6 @@
 export interface Address {
     id: string,
-    physicalAddres: string,
+    physicalAddress: string,
     postalAddress: string
 
 }

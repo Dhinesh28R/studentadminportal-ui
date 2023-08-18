@@ -26,11 +26,11 @@ export class StudentsComponent implements OnInit {
 
   ngOnInit(): void {
     //Fetch the student details
-    this.studentService.getStudent()
+    this.studentService.getStudents()
       .subscribe(
         (successResponse) => {
-          // console.log(successResponse[0].firstName);
-          //console.log(successResponse[0].lastName);
+          console.log(successResponse[0].firstName);
+          console.log(successResponse[0].lastName);
 
           this.students = successResponse;
           this.dataSource = new MatTableDataSource<Student>(this.students);

@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StudentsComponent } from './students/students.component';
+import { ViewStudentComponent } from './students/view-student/view-student.component';
 import { FormsModule } from '@angular/forms';
 
 
@@ -54,11 +55,13 @@ import { TopNavComponent } from './layout/top-nav/top-nav.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     TopNavComponent,
-    StudentsComponent
+    StudentsComponent,
+    ViewStudentComponent
   ],
   imports: [
     BrowserModule,
